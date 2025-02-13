@@ -1,0 +1,47 @@
+/* Remove as bordas do TabView */
+::ng-deep .p-tabview-nav-container {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Estilo dos botões das abas */
+::ng-deep .p-tabview-nav li {
+    flex: 1; 
+    text-align: center;
+}
+
+/* Estilo dos botões quando não estão ativos */
+::ng-deep .p-tabview-nav li .p-tabview-nav-link {
+    background: transparent;
+    border: none;
+    color: #6c757d;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Estilo do botão ativo (igual à imagem) */
+::ng-deep .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: white;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito hover */
+::ng-deep .p-tabview-nav li .p-tabview-nav-link:hover {
+    color: black;
+}
+
+/* Ajuste para dropdowns */
+.dropdown-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os dropdowns */
+    align-items: flex-start; /* Mantém os títulos alinhados */
+}
+
+.dropdown-item {
+    flex: 1; /* Faz os elementos ocuparem espaços iguais */
+}

@@ -1,0 +1,28 @@
+<p-toast key="tst"></p-toast>
+
+  
+        <h5>Cadastre uma Categoria</h5>
+
+        <div class="p-field">
+            <input 
+                pInputText 
+                id="descricao"
+                placeholder="Digite a Categoria"
+                style="width: 100%" 
+                type="text" 
+                [(ngModel)]="categoria.nome"
+                [ngClass]="{'p-invalid': submitted && !categoria.nome.trim()}" 
+            />
+            
+            <small class="p-error" *ngIf="submitted && !categoria.nome.trim()">
+                O nome da categoria é obrigatório!
+            </small>
+        </div>
+
+        <p></p>
+        <button 
+            pButton 
+            label="Salvar" 
+            (click)="criarCategoria()"  
+            class="p-button-secondary"
+        ></button>

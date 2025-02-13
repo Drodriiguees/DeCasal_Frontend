@@ -1,0 +1,44 @@
+<p-tabView class="custom-tabview">
+    <p-tabPanel header="Despesas">
+        <h5>Nova Despesas</h5>
+        <h6>Descrição</h6>
+        <input pautofocus="" aria-autocomplete="list" placeholder="Digite a Descrição" style="width: 100%"
+            class="p-element p-autocomplete-input p-inputtext p-component ng-star-inserted"
+            ng-reflect-ng-class="[object Object]" type="text" autocomplete="off" name="undefined" tabindex="0" value=""
+            id="autocomplete" aria-controls="pn_id_12_list">
+        <h6>Preço</h6>
+        <input pautofocus="" type="number" aria-autocomplete="list" placeholder="R$ 0,00" style="width: 100%"
+            class="p-element p-autocomplete-input p-inputtext p-component ng-star-inserted"
+            ng-reflect-ng-class="[object Object]" type="text" autocomplete="off" name="undefined" tabindex="0" value=""
+            id="autocomplete" aria-controls="pn_id_12_list">
+            <p></p>
+        <div class="dropdown-container">
+            <div class="dropdown-item">
+                <h6>Categoria</h6>
+                <p-dropdown [options]="categorias" [(ngModel)]="categoriaSelecionada" placeholder="Selecione uma categoria"
+                [ngStyle]="{ 'width': '100%' }" appendTo="body"></p-dropdown>
+            </div>
+        
+            <div class="dropdown-item">
+                <h6>Quem está pagando?</h6>
+                <p-dropdown [options]="categorias" [(ngModel)]="categoriaSelecionada" placeholder="Selecione quem paga"
+                [ngStyle]="{ 'width': '100%' }"  appendTo="body"></p-dropdown>
+            </div>
+        </div>
+        
+
+        <p></p>
+
+        <button pbutton="" pripple="" type="button" label="Salvar" style="width: 100%"
+            class="p-element p-ripple p-button-secondary p-button p-component" ng-reflect-label="Secondary"><span
+                class="p-button-label">Salvar</span><span class="p-ink" aria-hidden="true" 
+                role="presentation"></span></button>
+        <p></p>
+    </p-tabPanel>
+    <p-tabPanel header="Análise">
+        <p>Conteúdo da aba Análise</p>
+    </p-tabPanel>
+    <p-tabPanel header="Conta">
+        <p>Conteúdo da aba Conta</p>
+    </p-tabPanel>
+</p-tabView>
